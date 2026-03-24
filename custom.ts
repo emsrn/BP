@@ -7,8 +7,8 @@ enum Choice {
 namespace tapis {
 
     
-    let boutonPrecedentC = 1
-    let boutonPrecedentD = 1
+    let boutonPrecedentC = pins.digitalReadPin(DigitalPin.P13)
+    let boutonPrecedentD = pins.digitalReadPin(DigitalPin.P14)
     let moteurON = false
 
     // Initialise les résistances pull-up pour les boutons
